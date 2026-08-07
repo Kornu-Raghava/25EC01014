@@ -11,7 +11,7 @@ print("pandas : ", pd.__version__)
 print("matplotlib : ", matplotlib.__version__)
 
 plt.plot([0, 1, 2, 3], [0, 1, 4, 9], marker="o")
-plt.title("This code is working")
+plt.title("Hey people")
 plt.xlabel("x")
 plt.ylabel("x squared")
 plt.grid(True)
