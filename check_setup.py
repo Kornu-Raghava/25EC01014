@@ -12,7 +12,7 @@ print("matplotlib : ", matplotlib.__version__)
 
 plt.plot([0, 1, 2, 3], [0, 1, 4, 9], marker="o")
 plt.title("Git is tough")
-plt.xlabel("x")
+plt.xlabel("numbers")
 plt.ylabel("x squared")
 plt.grid(True)
 plt.show()
