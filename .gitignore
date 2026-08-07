@@ -1,0 +1,15 @@
+# .gitignore file
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# EDA / simulator artefacts
+*.raw
+*.log
+*.out
+*.b#*
+
+# OS clutter
+Thumbs.db
+.DS_Store
