@@ -13,7 +13,7 @@ print("My roll number is 25EC01014")
 
 plt.plot([0, 1, 2, 3], [0, 1, 4, 9], marker="o")
 plt.title("Git is tough")
-plt.xlabel("time")
+plt.xlabel("x")
 plt.ylabel("x squared")
 plt.grid(True)
 plt.show()
