@@ -101,10 +101,16 @@ def id_level3(vgs, vds):
     kp3 = mu_eff * Cox
     vdsat = vov / (1 + vov / (Esat * L))    # reduced saturation voltage
 
+    # I_D at the triode/saturation boundary, evaluated with the SAME
+    # triode expression used just below vdsat. Using this (instead of
+    # the textbook 0.5*kp3*vdsat^2 form) guarantees the curve is
+    # continuous at vds = vdsat -- no jump/spike at the boundary.
+    id_dsat = kp3 * (W / L) * (vov * vdsat - vdsat ** 2 / 2)
+
     triode = vds < vdsat
     id_[triode] = kp3 * (W / L) * (vov * vds[triode] - vds[triode] ** 2 / 2)
     sat = ~triode
-    id_[sat] = 0.5 * kp3 * (W / L) * vdsat ** 2 * (1 + lam * (vds[sat] - vdsat))
+    id_[sat] = id_dsat * (1 + lam * (vds[sat] - vdsat))
     return id_
 
 # ---------------------------------------------------------------
