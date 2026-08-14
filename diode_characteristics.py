@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sys
 
-FILE_PATH = r"C:\Users\Satya\Desktop\LABS\EDA TASKS\Electrical Data\Electrical Data\Diode_IV_Temperature.csv"
+FILE_PATH = r"C:\Users\Satya\Desktop\LABS\EDA TASKS\Electrical Data\Diode_IV_Temperature.csv"
 TEMP_COL = 'T (C)'
 V_COL = 'V (V)'
 I_COL = 'I (mA)'

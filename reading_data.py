@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = r'C:\Users\Satya\Desktop\HANDOUTS\EDA TOOLS\Electrical Data\Electrical Data\MOSFET_ID_VDS.csv'
+file_path = r"C:\Users\Satya\Desktop\LABS\EDA TASKS\Electrical Data\MOSFET_ID_VDS.csv"
 
 df = pd.read_csv(file_path)
 

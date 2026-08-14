@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # columns: V_DS (V), V_GS (V), I_D (mA)
-file_path = r"C:\Users\Satya\Desktop\HANDOUTS\EDA TOOLS\Electrical Data\Electrical Data\MOSFET_ID_VGS.csv"
+file_path = r"C:\Users\Satya\Desktop\LABS\EDA TASKS\Electrical Data\MOSFET_ID_VGS.csv"
 dft = pd.read_csv(file_path)
 
 fig, ax = plt.subplots(1, 2, figsize=(11, 4.2))

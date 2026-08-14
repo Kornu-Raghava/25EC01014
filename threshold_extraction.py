@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-file_path = r"C:\Users\Satya\Desktop\HANDOUTS\EDA TOOLS\Electrical Data\Electrical Data\MOSFET_ID_VGS.csv"
+file_path = r"C:\Users\Satya\Desktop\LABS\EDA TASKS\Electrical Data\MOSFET_ID_VGS.csv"
 dft = pd.read_csv(file_path)
 
 target_vds = sorted(dft['V_DS (V)'].unique())[0]

@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-file_path = r"C:\Users\Satya\Desktop\LABS\EDA TASKS\Electrical Data\Electrical Data\MOSFET_ID_VDS.csv"
+file_path = r"C:\Users\Satya\Desktop\LABS\EDA TASKS\Electrical Data\MOSFET_ID_VDS.csv"
 
 df = pd.read_csv(file_path)
 print("Columns:", df.columns)
